@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+
+<body>
+    <!-- 표를 작성할 때, 제일 부모 태그는 'table'
+            부모 태그란 :  ul. li 한쌍임. ul 안에 li 가 있는 것. li 의 부모는 ul. 
+            ex) 그 태그를 감싸는게 부모. 그 안에 있는게 자식 
+
+            ul 태그 안에 li 태그가 감싸고 있음. 
+            <ul> 
+                <li></li>
+            </ul>
+            이러면 ul 은 li의 부모 
+            li 는 ul 의 자식태그 임. 
+        -->
+
+
+    <!-- border-collapse: collapse; ; 선 겹쳐준다. / 이걸 안 쓰면 선이 떨어진다. -->
+    <table style="width: 100%; border-collapse: collapse;">
+        <!-- cation 안에 테이블 이름을 적는다.  -->
+        <!-- 엑셀에서 표에 크기를 각각 만들 수 있음.  / table 칸칸의 넓이를 정하려면? col 태그를 사용-->
+        <caption>
+            테이블 이름
+        </caption>
+
+        <!-- column 줄임말이 : col / 이건, 열, 세로줄 -->
+        <col style="width : 50px;">
+        <col style="width: 100px;">
+        <col style="width: 200px;">
+        <col style="width: 200px;">
+        <col style="width: 200px;">
+
+
+        <tr>
+            <!-- table 제일 위에 있는 테이들 헤더 이름 -->
+            <th> 번호 </th>
+            <th> 이름 </th>
+            <th> 나이 </th>
+            <th> 성별 </th>
+            <th> 국적 </th>
+        </tr>
+
+        <!-- 선은 스타일 요소로 추가해줘야 함 -->
+        <!-- 여기 자동완성 모르겠어 📛📛📛 -->
+        <tr>
+            <!-- border : 테두리를 바꿀 수 있는 속성 / 두 번째는 선의 타입 / 맨뒤 : 선의 테두리 색  -->
+            <!-- rowspan : 세로로 병합  -->
+            <!-- colspan : 가로줄을 병합  -->
+            <!-- background-color: aqua; : 배경색 지정 -->
+            <th style="border: 1px solid black" ;> 1 </th>
+            <td colspan ="2" style="border: 1px solid black"> 정덕진</td>
+            <td style="border: 1px solid black"> 35</td>
+            <td style="border: 1px solid black"> 남자</td>
+            <td rowspan="3" style="border: 1px solid black; background-color: aqua; text-align: center;"> 한국</td>
+
+            <!-- <td style="border: 1px solid black"> 오캐이</td> -->
+        </tr>
+        <tr>
+            <th style="border: 1px solid black" ;> 2 </th>
+            <td style="border: 1px solid black" ;> 정덕진</td>
+            <td style="border: 1px solid black" ;> 35</td>
+            <td style="border: 1px solid black" ;> 남자~</td>
+            <!-- <td rowspan="2" style="border: 1px solid black" ;> 한국</td> -->
+        </tr>
+        <tr>
+            <th style="border: 1px solid black" ;> 3 </th>
+            <td style="border: 1px solid black" ;> 정덕진</td>
+            <td style="border: 1px solid black" ;> 35</td>
+            <td style="border: 1px solid black" ;> 남자 </td>
+            <!-- <td rowspan="2" style="border: 1px solid black" ;> 오캐이</td> -->
+        </tr>
+
+
+
+
+    </table>
+
+
+</body>
+
+</html>
